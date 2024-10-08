@@ -27,24 +27,24 @@ Listas: Para manejar las sesiones de entrenamiento
 #### Pseudocodigo
 ` ` ` 
 
-funcion planificar_entrenamiento(dia, tipo, duracion, distancia):
-    si dia no está en entrenamientos:
-        entrenamientos[dia] = {'tipo': tipo, 'duracion': duracion, 'distancia': distancia}
-        imprimir("Entrenamiento planificado para", dia, ":", tipo, ",", duracion, "minutos,", distancia, "km")
-    sino:
-        imprimir("Ya existe un entrenamiento planificado para el día", dia)
+    funcion planificar_entrenamiento(dia, tipo, duracion, distancia):
+        si dia no está en entrenamientos:
+            entrenamientos[dia] = {'tipo': tipo, 'duracion': duracion, 'distancia': distancia}
+            imprimir("Entrenamiento planificado para", dia, ":", tipo, ",", duracion, "minutos,", distancia, "km")
+        sino:
+            imprimir("Ya existe un entrenamiento planificado para el día", dia)
 
-funcion registrar_entrenamiento(dia, tipo, duracion, distancia):
-    si dia en entrenamientos:
-        entrenamientos[dia]['tipo'] = tipo
-        entrenamientos[dia]['duracion'] = duracion
-        entrenamientos[dia]['distancia'] = distancia
-        imprimir("Entrenamiento registrado para", dia, ":", tipo, ",", duracion, "minutos,", distancia, "km")
-    sino:
-        imprimir("No hay entrenamiento planificado para", dia)
+    funcion registrar_entrenamiento(dia, tipo, duracion, distancia):
+        si dia en entrenamientos:
+            entrenamientos[dia]['tipo'] = tipo
+            entrenamientos[dia]['duracion'] = duracion
+            entrenamientos[dia]['distancia'] = distancia
+            imprimir("Entrenamiento registrado para", dia, ":", tipo, ",", duracion, "minutos,", distancia, "km")
+        sino:
+            imprimir("No hay entrenamiento planificado para", dia)
 
-funcion consultar_progreso():
-    para cada dia en entrenamientos:
-        imprimir(dia, ":", entrenamientos[dia]['tipo'], ",", entrenamientos[dia]['duracion'], "minutos,", entrenamientos[dia]['distancia'], "km")
-        
+    funcion consultar_progreso():
+        para cada dia en entrenamientos:
+            imprimir(dia, ":", entrenamientos[dia]['tipo'], ",", entrenamientos[dia]['duracion'], "minutos,", entrenamientos[dia]['distancia'], "km")
+            
 ` ` ` 
