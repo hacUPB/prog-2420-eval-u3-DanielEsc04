@@ -26,7 +26,7 @@ Listas: Para manejar las sesiones de entrenamiento
 
 #### Pseudocodigo
 ` ` ` 
-
+    Inicio
     funcion planificar_entrenamiento(dia, tipo, duracion, distancia):
         si dia no está en entrenamientos:
             entrenamientos[dia] = {'tipo': tipo, 'duracion': duracion, 'distancia': distancia}
@@ -46,5 +46,5 @@ Listas: Para manejar las sesiones de entrenamiento
     funcion consultar_progreso():
         para cada dia en entrenamientos:
             imprimir(dia, ":", entrenamientos[dia]['tipo'], ",", entrenamientos[dia]['duracion'], "minutos,", entrenamientos[dia]['distancia'], "km")
-            
+    Fin
 ` ` ` 
